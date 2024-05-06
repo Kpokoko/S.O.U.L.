@@ -1,0 +1,117 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\papka\\SOUL\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{995EEE2F-119C-4D1D-9FC5-40D295497CF1}|SOUL\\SOUL.csproj|f:\\papka\\soul\\soul\\mvcelements\\animations\\animation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{995EEE2F-119C-4D1D-9FC5-40D295497CF1}|SOUL\\SOUL.csproj|solutionrelative:soul\\mvcelements\\animations\\animation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{995EEE2F-119C-4D1D-9FC5-40D295497CF1}|SOUL\\SOUL.csproj|F:\\papka\\SOUL\\soul\\models\\controlableentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{995EEE2F-119C-4D1D-9FC5-40D295497CF1}|SOUL\\SOUL.csproj|solutionrelative:soul\\models\\controlableentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{995EEE2F-119C-4D1D-9FC5-40D295497CF1}|SOUL\\SOUL.csproj|F:\\papka\\SOUL\\soul\\mvcelements\\animations\\animationplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{995EEE2F-119C-4D1D-9FC5-40D295497CF1}|SOUL\\SOUL.csproj|solutionrelative:soul\\mvcelements\\animations\\animationplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{995EEE2F-119C-4D1D-9FC5-40D295497CF1}|SOUL\\SOUL.csproj|F:\\papka\\SOUL\\soul\\models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{995EEE2F-119C-4D1D-9FC5-40D295497CF1}|SOUL\\SOUL.csproj|solutionrelative:soul\\models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{995EEE2F-119C-4D1D-9FC5-40D295497CF1}|SOUL\\SOUL.csproj|F:\\papka\\SOUL\\soul\\models\\soul.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{995EEE2F-119C-4D1D-9FC5-40D295497CF1}|SOUL\\SOUL.csproj|solutionrelative:soul\\models\\soul.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{995EEE2F-119C-4D1D-9FC5-40D295497CF1}|SOUL\\SOUL.csproj|F:\\papka\\SOUL\\soul\\levelinfo\\level.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{995EEE2F-119C-4D1D-9FC5-40D295497CF1}|SOUL\\SOUL.csproj|solutionrelative:soul\\levelinfo\\level.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Animation.cs",
+              "DocumentMoniker": "F:\\papka\\SOUL\\SOUL\\MVCElements\\Animations\\Animation.cs",
+              "RelativeDocumentMoniker": "SOUL\\MVCElements\\Animations\\Animation.cs",
+              "ToolTip": "F:\\papka\\SOUL\\SOUL\\MVCElements\\Animations\\Animation.cs",
+              "RelativeToolTip": "SOUL\\MVCElements\\Animations\\Animation.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T11:08:21.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Level.cs",
+              "DocumentMoniker": "F:\\papka\\SOUL\\SOUL\\LevelInfo\\Level.cs",
+              "RelativeDocumentMoniker": "SOUL\\LevelInfo\\Level.cs",
+              "ToolTip": "F:\\papka\\SOUL\\SOUL\\LevelInfo\\Level.cs",
+              "RelativeToolTip": "SOUL\\LevelInfo\\Level.cs",
+              "ViewState": "AQIAAOIAAAAAAAAAAAAIwO0AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T09:47:54.814Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ControlableEntity.cs",
+              "DocumentMoniker": "F:\\papka\\SOUL\\SOUL\\Models\\ControlableEntity.cs",
+              "RelativeDocumentMoniker": "SOUL\\Models\\ControlableEntity.cs",
+              "ToolTip": "F:\\papka\\SOUL\\SOUL\\Models\\ControlableEntity.cs",
+              "RelativeToolTip": "SOUL\\Models\\ControlableEntity.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAQwA0AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T09:44:39.227Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AnimationPlayer.cs",
+              "DocumentMoniker": "F:\\papka\\SOUL\\SOUL\\MVCElements\\Animations\\AnimationPlayer.cs",
+              "RelativeDocumentMoniker": "SOUL\\MVCElements\\Animations\\AnimationPlayer.cs",
+              "ToolTip": "F:\\papka\\SOUL\\SOUL\\MVCElements\\Animations\\AnimationPlayer.cs",
+              "RelativeToolTip": "SOUL\\MVCElements\\Animations\\AnimationPlayer.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAUwDYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T09:42:05.94Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Soul.cs",
+              "DocumentMoniker": "F:\\papka\\SOUL\\SOUL\\Models\\Soul.cs",
+              "RelativeDocumentMoniker": "SOUL\\Models\\Soul.cs",
+              "ToolTip": "F:\\papka\\SOUL\\SOUL\\Models\\Soul.cs",
+              "RelativeToolTip": "SOUL\\Models\\Soul.cs",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAowCUAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T09:24:35.922Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Player.cs",
+              "DocumentMoniker": "F:\\papka\\SOUL\\SOUL\\Models\\Player.cs",
+              "RelativeDocumentMoniker": "SOUL\\Models\\Player.cs",
+              "ToolTip": "F:\\papka\\SOUL\\SOUL\\Models\\Player.cs",
+              "RelativeToolTip": "SOUL\\Models\\Player.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAowDEAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T09:24:33.176Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

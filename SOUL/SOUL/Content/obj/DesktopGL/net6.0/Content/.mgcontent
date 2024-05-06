@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Profile>Reach</Profile>
+  <Platform>DesktopGL</Platform>
+  <Config />
+  <SourceFiles>
+    <File>F:/papka/SOUL/SOUL/Content/Player/Die.png</File>
+    <File>F:/papka/SOUL/SOUL/Content/Player/Idle.png</File>
+    <File>F:/papka/SOUL/SOUL/Content/Player/Jump.png</File>
+    <File>F:/papka/SOUL/SOUL/Content/Player/Run.png</File>
+    <File>F:/papka/SOUL/SOUL/Content/Tiles/Button.png</File>
+    <File>F:/papka/SOUL/SOUL/Content/Tiles/Character.jpg</File>
+    <File>F:/papka/SOUL/SOUL/Content/Tiles/Door.png</File>
+    <File>F:/papka/SOUL/SOUL/Content/Tiles/platform.png</File>
+    <File>F:/papka/SOUL/SOUL/Content/Tiles/Spike.png</File>
+    <File>F:/papka/SOUL/SOUL/Content/Tiles/Wall.png</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>

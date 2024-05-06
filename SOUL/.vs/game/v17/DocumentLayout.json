@@ -1,0 +1,277 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\papka\\Game\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{995EEE2F-119C-4D1D-9FC5-40D295497CF1}|game\\game.csproj|f:\\papka\\game\\game\\models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{995EEE2F-119C-4D1D-9FC5-40D295497CF1}|game\\game.csproj|solutionrelative:game\\models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{995EEE2F-119C-4D1D-9FC5-40D295497CF1}|game\\game.csproj|F:\\papka\\Game\\game\\mvcelements\\animations\\animationplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{995EEE2F-119C-4D1D-9FC5-40D295497CF1}|game\\game.csproj|solutionrelative:game\\mvcelements\\animations\\animationplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{995EEE2F-119C-4D1D-9FC5-40D295497CF1}|game\\game.csproj|F:\\papka\\Game\\game\\mvcelements\\animations\\animation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{995EEE2F-119C-4D1D-9FC5-40D295497CF1}|game\\game.csproj|solutionrelative:game\\mvcelements\\animations\\animation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{995EEE2F-119C-4D1D-9FC5-40D295497CF1}|game\\game.csproj|F:\\papka\\Game\\game\\models\\button.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{995EEE2F-119C-4D1D-9FC5-40D295497CF1}|game\\game.csproj|solutionrelative:game\\models\\button.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{995EEE2F-119C-4D1D-9FC5-40D295497CF1}|game\\game.csproj|F:\\papka\\Game\\game\\models\\controlableentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{995EEE2F-119C-4D1D-9FC5-40D295497CF1}|game\\game.csproj|solutionrelative:game\\models\\controlableentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{995EEE2F-119C-4D1D-9FC5-40D295497CF1}|game\\game.csproj|F:\\papka\\Game\\game\\models\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{995EEE2F-119C-4D1D-9FC5-40D295497CF1}|game\\game.csproj|solutionrelative:game\\models\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{995EEE2F-119C-4D1D-9FC5-40D295497CF1}|game\\game.csproj|F:\\papka\\Game\\game\\tile\\tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{995EEE2F-119C-4D1D-9FC5-40D295497CF1}|game\\game.csproj|solutionrelative:game\\tile\\tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{995EEE2F-119C-4D1D-9FC5-40D295497CF1}|game\\game.csproj|F:\\papka\\Game\\game\\extensions\\rectangleextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{995EEE2F-119C-4D1D-9FC5-40D295497CF1}|game\\game.csproj|solutionrelative:game\\extensions\\rectangleextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{995EEE2F-119C-4D1D-9FC5-40D295497CF1}|game\\game.csproj|F:\\papka\\Game\\game\\levelinfo\\level.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{995EEE2F-119C-4D1D-9FC5-40D295497CF1}|game\\game.csproj|solutionrelative:game\\levelinfo\\level.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{995EEE2F-119C-4D1D-9FC5-40D295497CF1}|game\\game.csproj|F:\\papka\\Game\\game\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{995EEE2F-119C-4D1D-9FC5-40D295497CF1}|game\\game.csproj|solutionrelative:game\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{995EEE2F-119C-4D1D-9FC5-40D295497CF1}|game\\game.csproj|F:\\papka\\Game\\game\\mvcelements\\view.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{995EEE2F-119C-4D1D-9FC5-40D295497CF1}|game\\game.csproj|solutionrelative:game\\mvcelements\\view.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{995EEE2F-119C-4D1D-9FC5-40D295497CF1}|game\\game.csproj|F:\\papka\\Game\\game\\models\\soul.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{995EEE2F-119C-4D1D-9FC5-40D295497CF1}|game\\game.csproj|solutionrelative:game\\models\\soul.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{995EEE2F-119C-4D1D-9FC5-40D295497CF1}|game\\game.csproj|F:\\papka\\Game\\game\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{995EEE2F-119C-4D1D-9FC5-40D295497CF1}|game\\game.csproj|solutionrelative:game\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{995EEE2F-119C-4D1D-9FC5-40D295497CF1}|game\\game.csproj|F:\\papka\\Game\\game\\models\\door.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{995EEE2F-119C-4D1D-9FC5-40D295497CF1}|game\\game.csproj|solutionrelative:game\\models\\door.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{995EEE2F-119C-4D1D-9FC5-40D295497CF1}|game\\game.csproj|F:\\papka\\Game\\game\\tile\\typeoftile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{995EEE2F-119C-4D1D-9FC5-40D295497CF1}|game\\game.csproj|solutionrelative:game\\tile\\typeoftile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{995EEE2F-119C-4D1D-9FC5-40D295497CF1}|game\\game.csproj|F:\\papka\\Game\\game\\mvcelements\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{995EEE2F-119C-4D1D-9FC5-40D295497CF1}|game\\game.csproj|solutionrelative:game\\mvcelements\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 12,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Animation.cs",
+              "DocumentMoniker": "F:\\papka\\Game\\game\\MVCElements\\Animations\\Animation.cs",
+              "RelativeDocumentMoniker": "game\\MVCElements\\Animations\\Animation.cs",
+              "ToolTip": "F:\\papka\\Game\\game\\MVCElements\\Animations\\Animation.cs",
+              "RelativeToolTip": "game\\MVCElements\\Animations\\Animation.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAIwDEAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T07:15:48.927Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AnimationPlayer.cs",
+              "DocumentMoniker": "F:\\papka\\Game\\game\\MVCElements\\Animations\\AnimationPlayer.cs",
+              "RelativeDocumentMoniker": "game\\MVCElements\\Animations\\AnimationPlayer.cs",
+              "ToolTip": "F:\\papka\\Game\\game\\MVCElements\\Animations\\AnimationPlayer.cs",
+              "RelativeToolTip": "game\\MVCElements\\Animations\\AnimationPlayer.cs",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAYwFMAAABwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T07:13:48.853Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Game1.cs",
+              "DocumentMoniker": "F:\\papka\\Game\\game\\Game1.cs",
+              "RelativeDocumentMoniker": "game\\Game1.cs",
+              "ToolTip": "F:\\papka\\Game\\game\\Game1.cs",
+              "RelativeToolTip": "game\\Game1.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAuwE0AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T14:27:25.093Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Controller.cs",
+              "DocumentMoniker": "F:\\papka\\Game\\game\\MVCElements\\Controller.cs",
+              "RelativeDocumentMoniker": "game\\MVCElements\\Controller.cs",
+              "ToolTip": "F:\\papka\\Game\\game\\MVCElements\\Controller.cs",
+              "RelativeToolTip": "game\\MVCElements\\Controller.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBJwAcAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T05:28:16.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "View.cs",
+              "DocumentMoniker": "F:\\papka\\Game\\game\\MVCElements\\View.cs",
+              "RelativeDocumentMoniker": "game\\MVCElements\\View.cs",
+              "ToolTip": "F:\\papka\\Game\\game\\MVCElements\\View.cs",
+              "RelativeToolTip": "game\\MVCElements\\View.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAxwBEAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T05:27:05.213Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Soul.cs",
+              "DocumentMoniker": "F:\\papka\\Game\\game\\Models\\Soul.cs",
+              "RelativeDocumentMoniker": "game\\Models\\Soul.cs",
+              "ToolTip": "F:\\papka\\Game\\game\\Models\\Soul.cs",
+              "RelativeToolTip": "game\\Models\\Soul.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAiwCsAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T19:22:55.774Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "TypeOfTile.cs",
+              "DocumentMoniker": "F:\\papka\\Game\\game\\Tile\\TypeOfTile.cs",
+              "RelativeDocumentMoniker": "game\\Tile\\TypeOfTile.cs",
+              "ToolTip": "F:\\papka\\Game\\game\\Tile\\TypeOfTile.cs",
+              "RelativeToolTip": "game\\Tile\\TypeOfTile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T18:49:12.381Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Door.cs",
+              "DocumentMoniker": "F:\\papka\\Game\\game\\Models\\Door.cs",
+              "RelativeDocumentMoniker": "game\\Models\\Door.cs",
+              "ToolTip": "F:\\papka\\Game\\game\\Models\\Door.cs",
+              "RelativeToolTip": "game\\Models\\Door.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAIBJwBEAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T18:34:48.773Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Button.cs",
+              "DocumentMoniker": "F:\\papka\\Game\\game\\Models\\Button.cs",
+              "RelativeDocumentMoniker": "game\\Models\\Button.cs",
+              "ToolTip": "F:\\papka\\Game\\game\\Models\\Button.cs",
+              "RelativeToolTip": "game\\Models\\Button.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAwwCoAAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-26T09:28:36.842Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Level.cs",
+              "DocumentMoniker": "F:\\papka\\Game\\game\\LevelInfo\\Level.cs",
+              "RelativeDocumentMoniker": "game\\LevelInfo\\Level.cs",
+              "ToolTip": "F:\\papka\\Game\\game\\LevelInfo\\Level.cs",
+              "RelativeToolTip": "game\\LevelInfo\\Level.cs",
+              "ViewState": "AQIAABUBAAAAAAAAAAAcwCQBAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T11:22:54.879Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Tile.cs",
+              "DocumentMoniker": "F:\\papka\\Game\\game\\Tile\\Tile.cs",
+              "RelativeDocumentMoniker": "game\\Tile\\Tile.cs",
+              "ToolTip": "F:\\papka\\Game\\game\\Tile\\Tile.cs",
+              "RelativeToolTip": "game\\Tile\\Tile.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAqwBMAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T16:05:24.758Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Model.cs",
+              "DocumentMoniker": "F:\\papka\\Game\\game\\Models\\Model.cs",
+              "RelativeDocumentMoniker": "game\\Models\\Model.cs",
+              "ToolTip": "F:\\papka\\Game\\game\\Models\\Model.cs",
+              "RelativeToolTip": "game\\Models\\Model.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAwwA0AAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T17:34:48.654Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Player.cs",
+              "DocumentMoniker": "F:\\papka\\Game\\game\\Models\\Player.cs",
+              "RelativeDocumentMoniker": "game\\Models\\Player.cs",
+              "ToolTip": "F:\\papka\\Game\\game\\Models\\Player.cs",
+              "RelativeToolTip": "game\\Models\\Player.cs",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAIwFUAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T06:31:49.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RectangleExtensions.cs",
+              "DocumentMoniker": "F:\\papka\\Game\\game\\Extensions\\RectangleExtensions.cs",
+              "RelativeDocumentMoniker": "game\\Extensions\\RectangleExtensions.cs",
+              "ToolTip": "F:\\papka\\Game\\game\\Extensions\\RectangleExtensions.cs",
+              "RelativeToolTip": "game\\Extensions\\RectangleExtensions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T10:29:54.162Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\papka\\Game\\game\\Program.cs",
+              "RelativeDocumentMoniker": "game\\Program.cs",
+              "ToolTip": "F:\\papka\\Game\\game\\Program.cs",
+              "RelativeToolTip": "game\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-26T15:10:42.348Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ControlableEntity.cs",
+              "DocumentMoniker": "F:\\papka\\Game\\game\\Models\\ControlableEntity.cs",
+              "RelativeDocumentMoniker": "game\\Models\\ControlableEntity.cs",
+              "ToolTip": "F:\\papka\\Game\\game\\Models\\ControlableEntity.cs",
+              "RelativeToolTip": "game\\Models\\ControlableEntity.cs",
+              "ViewState": "AQIAALgAAAAAAAAAAAAIwMIAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T17:15:44.326Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

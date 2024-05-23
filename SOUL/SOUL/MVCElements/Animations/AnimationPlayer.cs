@@ -4,7 +4,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace game.MVCElements.Animations
 {
-    public class AnimationPlayer
+    public struct AnimationPlayer
     {
         public Animation Animation { get => animation; }
         Animation animation;
@@ -14,6 +14,7 @@ namespace game.MVCElements.Animations
         private bool isStopped;
         public void Pause() => isStopped = true;
         public void Unpause() => isStopped = false;
+        public bool IsAnimPlaying() => Animation != null;
 
         public Vector2 Origin
         {

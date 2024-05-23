@@ -13,9 +13,8 @@ namespace game.LevelInfo
 {
     public class Level
     {
+        #region fields
         private Tile[,] tiles;
-        private Texture2D[] layers;
-        private const int EntityLayer = 2;
         private Vector2 start;
         private Point exit;
         Player player;
@@ -26,6 +25,7 @@ namespace game.LevelInfo
         public List<Door> DoorsToUpdate = new List<Door>();
         private List<Vector2> buttonsToLoad = new List<Vector2>();
         private HashSet<Vector2> doorsPositions = new HashSet<Vector2>();
+        #endregion fields
         public Player Player { get => player; }
 
         public int Width { get => tiles.GetLength(0); }
@@ -38,12 +38,8 @@ namespace game.LevelInfo
 
         public Level(IServiceProvider serviceProvider, Stream fileStream, int levelIndex)
         {
+            
             content = new ContentManager(serviceProvider, "Content");
-            //layers = new Texture2D[2];
-            //for (var i = 0; i < layers.Length; i++)
-            //{
-            //    layers[i] = content.Load<Texture2D>("Tiles")
-            //}
             LoadTiles(fileStream);
         }
 
@@ -81,6 +77,8 @@ namespace game.LevelInfo
             {
                 case 'S':
                     return LoadTile("Spike", TypeOfTile.Spike);
+                case 's':
+                    return LoadTile("ReversedSpike", TypeOfTile.Spike);
                 case 'D':
                     return new Tile(null, TypeOfTile.Door);
                 case 'B':
@@ -183,16 +181,21 @@ namespace game.LevelInfo
 
         private Tile LoadStart(int x, int y)
         {
+            if (Player != null)
+                throw new ArgumentException("There're more that one start positions!");
             var playerTexture = Content.Load<Texture2D>("Tiles/Character");
             start = RectangleExtensions.GetBottomCenter(GetBounds(x, y));
-            start.X -= 30;
+            start.Y -= 30;
             player = new Player(this, start, playerTexture);
             return new Tile(null, TypeOfTile.Passable);
         }
 
         private Tile LoadExit(int x, int y)
         {
-            exit = GetBounds(x, y).Center;
+            if (exit != Point.Zero)
+                throw new ArgumentException("There're more that one end positions!");
+            var pseudoExit = GetBounds(x, y).Center;
+            exit = new Point(pseudoExit.X + 29, pseudoExit.Y);
             return new Tile(null, TypeOfTile.Passable);
         }
 
@@ -230,18 +233,19 @@ namespace game.LevelInfo
             if (player.IsSoulAlive)
             {
                 player.Soul.Update(gameTime);
-                if (Player.Soul.BoundingRectangle.Top >= ScreenHeight * Tile.Height || player.Soul.IsDead)
-                    Player.IsDead = true;
-                return;
+                if (player.Soul.BoundingRectangle.Top >= ScreenHeight * Tile.Height || player.Soul.IsDead)
+                    player.KillPlayer();
+                if (player.IsDead)
+                    player.Update(gameTime);
             }
             else
             {
-                player.Soul.Position = player.Position;
-                if (Player.IsOnGround)
-                    Player.Stamina = 60;
-                Player.Update(gameTime);
-                if (Player.BoundingRectangle.Top >= ScreenHeight * Tile.Height)
-                    Player.IsDead = true;
+                player.Soul.FollowPlayer(player.Position);
+                if (player.CheckStanding())
+                    player.RefillStamina();
+                player.Update(gameTime);
+                if (player.BoundingRectangle.Top >= ScreenHeight * Tile.Height)
+                    player.KillPlayer();
             }
             for (var i = 0; i < ButtonsToUpdate.Count; i++)
             {
@@ -257,7 +261,7 @@ namespace game.LevelInfo
                 if (oldLength != DoorsToUpdate.Count)
                     i--;
             }
-            if (!Player.IsDead && Player.IsOnGround && Player.BoundingRectangle.Contains(exit))
+            if (!Player.IsDead && Player.CheckStanding() && Player.BoundingRectangle.Contains(exit))
                 OnExitReached();
         }
 
@@ -279,12 +283,9 @@ namespace game.LevelInfo
             reachedExit = true;
         }
 
-        private void Restart() => Player.Reset(start);
 
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
-            //for (var i = 0; i <= EntityLayer; i++)
-            //    spriteBatch.Draw(layers[i], Vector2.Zero, Color.White);
             foreach (var button in buttons.Values)
                 button.Draw(spriteBatch);
             foreach (var key in buttons.Keys)
@@ -293,8 +294,6 @@ namespace game.LevelInfo
             player.Draw(gameTime, spriteBatch);
             if (player.IsSoulAlive)
                 player.Soul.Draw(gameTime, spriteBatch);
-            //for (int i = EntityLayer + 1; i < layers.Length; ++i)
-            //    spriteBatch.Draw(layers[i], Vector2.Zero, Color.White);
         }
 
         private void DrawTiles(SpriteBatch spriteBatch)

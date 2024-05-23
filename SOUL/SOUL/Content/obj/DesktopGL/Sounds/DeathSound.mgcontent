@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SourceFile>F:/papka/SOUL/SOUL/Content/Sounds/DeathSound.wav</SourceFile>
+  <SourceTime>2024-05-18T16:17:43.8668499+05:00</SourceTime>
+  <DestFile>F:/papka/SOUL/SOUL/Content/bin/DesktopGL/Sounds/DeathSound.xnb</DestFile>
+  <DestTime>2024-05-18T16:20:54.2704824+05:00</DestTime>
+  <Importer>WavImporter</Importer>
+  <ImporterTime>2022-07-26T16:44:56+05:00</ImporterTime>
+  <Processor>SoundEffectProcessor</Processor>
+  <ProcessorTime>2022-07-26T16:44:56+05:00</ProcessorTime>
+  <Parameters>
+    <Key>Quality</Key>
+    <Value>Best</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput />
+</PipelineBuildEvent>

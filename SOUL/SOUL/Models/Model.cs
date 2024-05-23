@@ -1,7 +1,6 @@
 ﻿using game.Extensions;
 using game.LevelInfo;
 using game.MVCElements;
-using game.MVCElements.Animations;
 using game.Tiles;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -11,14 +10,13 @@ namespace game.Entities
 {
     public class Model
     {
-        public Vector2 Position;
-        public View View;
-        public Vector2 Velocity;
-        public Level Level;
-        public float VerticalMovement;
-        public float HorizontalMovement;
-        public bool IsOnGround;
-        public bool IsDead;
+        protected bool WasOnGround;
+        public Vector2 Position { get; protected set; }
+        public View View { get; protected set; }
+        protected Vector2 Velocity;
+        public Level Level { get; protected set; }
+        protected bool IsOnGround;
+        public bool IsDead { get; protected set; }
         public float previousBottom;
         public Rectangle BoundingRectangle
         {
@@ -57,7 +55,7 @@ namespace game.Entities
                             var absDepthX = Math.Abs(depth.X);
                             var absDepthY = Math.Abs(depth.Y);
                             if ((this is Player || this is Soul) && collision is TypeOfTile.Spike
-                                && absDepthX > 10 && absDepthY > 35)
+                                && absDepthX > 15 && absDepthY > 25)
                             {
                                 this.IsDead = true;
                                 return;
@@ -67,7 +65,6 @@ namespace game.Entities
                             {
                                 if (previousBottom <= tileBounds.Top && collision is not TypeOfTile.Spike)
                                     IsOnGround = true;
-
                                 if (collision is TypeOfTile.Impassable || collision is TypeOfTile.Button
                                     || collision is TypeOfTile.Door || IsOnGround)
                                 {

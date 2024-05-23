@@ -7,49 +7,72 @@ using Microsoft.Xna.Framework.Input;
 using System;
 using game.MVCElements.Animations;
 using Microsoft.Xna.Framework.Graphics;
+using System.Collections.Generic;
 
 namespace game.Entities
 {
     public class ControlableEntity : Model
     {
-        public float Stamina = 100f;
+        #region fields
+        private SpriteEffects flip = SpriteEffects.None;
+        public const float MaxStamina = 75f;
+        protected float Stamina = MaxStamina;
         public Controller Input;
-        public bool isJumping;
-        public bool InAir;
-        public bool IsClimbing;
-        public bool IsLastTile;
-        public float AirTime;
+        protected bool isJumping;
+        protected bool InAir;
+        protected bool IsClimbing;
+        protected float VerticalMovement;
+        protected float HorizontalMovement;
+        protected float AirTime;
+        public Dictionary<string, Animation> animations;
         public const float MaxAirTime = 0.525f;
-        public float StartJumpVelocity = -2200.0f;
+        public const float StartJumpVelocity = -2200.0f;
         public const float JumpControlPower = 0.14f;
-        public bool NearWall;
-        float MoveAcceleration = 13000f;
-        float GravityAcceleration = 3400f;
-        const float MaxFallSpeed = 550f;
-        const float GroundDragFactor = 0.48f;
-        private const float AirDragFactor = 0.58f;
-        float MaxMovementSpeed = 1750f;
+        protected bool NearWall;
+        public const float MoveAcceleration = 13000f;
+        public const float GravityAcceleration = 3400f;
+        public const float MaxFallSpeed = 550f;
+        public const float GroundDragFactor = 0.48f;
+        public const float AirDragFactor = 0.58f;
+        public const float MaxMovementSpeed = 1750f;
+        #endregion fields
 
+        #region utilities
         public object Clone()
         {
             return this.MemberwiseClone();
         }
 
+        public void Stop()
+        {
+            VerticalMovement = 0;
+            HorizontalMovement = 0;
+        }
+
+        public void SetMovement(float horizontal, float vertical)
+        {
+            VerticalMovement = vertical;
+            HorizontalMovement = horizontal;
+        }
+        #endregion utilities
+
         public float Jump(float velocityY, GameTime gameTime)
         {
+            var jump = new Animation(Level.Content.Load<Texture2D>("Player/Jump"), 0.1f, false);
             var time = (float)gameTime.ElapsedGameTime.TotalSeconds;
             if (isJumping)
             {
+                if (!InAir && (IsOnGround || WasOnGround))
+                    View.CallAnimation(jump);
                 if ((!InAir && IsOnGround) || AirTime > 0.0f)
-                {
                     AirTime += time;
-                    //test.PlayAnimation(new Animation(Level.Content.Load<Texture2D>("Player/Jump"), 0.1f, false));
-                }
                 if (AirTime > 0.0f && AirTime <= MaxAirTime)
                     velocityY =
                         StartJumpVelocity * (1 - (float)Math.Pow(AirTime / MaxAirTime, JumpControlPower));
                 else
+                {
                     AirTime = 0;
+                }
             }
             else
                 AirTime = 0;
@@ -57,8 +80,14 @@ namespace game.Entities
             return velocityY;
         }
 
+        #region climbing
         public Vector2 Climb(Vector2 velocity, GameTime gameTime)
         {
+            if (Stamina == MaxStamina)
+            {
+                var climb = new Animation(Level.Content.Load<Texture2D>("Player/Climb"), 0.1f, true);
+                View.CallAnimation(climb);
+            }
             Stamina -= 0.5f;
             var currentKey = Keyboard.GetState();
             if (!currentKey.IsKeyDown(Input.Up) || !currentKey.IsKeyDown(Input.Down))
@@ -110,9 +139,9 @@ namespace game.Entities
             KeyboardState currentKey)
         {
             if (isLeftSide)
-                Position.X -= Math.Abs(distances[0]) - distances[2];
+                Position = new Vector2(Position.X -(Math.Abs(distances[0]) - distances[2]), Position.Y);
             else
-                Position.X += Math.Abs(distances[0]) - distances[2];
+                Position = new Vector2(Position.X - (Math.Abs(distances[0]) - distances[2]), Position.Y);
             if (currentKey.IsKeyDown(Input.Up))
             {
                 VerticalMovement = -100;
@@ -124,7 +153,7 @@ namespace game.Entities
                 Stamina -= 0.5f;
             }
         }
-
+        #endregion
         public TypeOfTile[] GetNeighbourWallsAsTiles(int[] neighbourTiles)
         {
             var upperLeft = Level.HoldInBounds(neighbourTiles[0], neighbourTiles[2]);
@@ -195,9 +224,14 @@ namespace game.Entities
         }
         #endregion
 
-        public void OnExitReached()
+        public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
-            Console.WriteLine("END");   
+            var posWithOffset = new Vector2(Position.X, Position.Y + 40);
+            if (Velocity.X < 0)
+                flip = SpriteEffects.FlipHorizontally;
+            else if (Velocity.X > 0)
+                flip = SpriteEffects.None;
+            View.DrawAnimation(gameTime, spriteBatch, posWithOffset, flip);
         }
     }
 }

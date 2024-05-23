@@ -1,9 +1,4 @@
 ﻿using Microsoft.Xna.Framework.Input;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace game.MVCElements
 {
@@ -17,5 +12,7 @@ namespace game.MVCElements
         public Keys ThrowClone;
         public Keys Grab;
         public Keys SplashDown;
+        public Keys Restart;
+        public Keys Skip;
     }
 }

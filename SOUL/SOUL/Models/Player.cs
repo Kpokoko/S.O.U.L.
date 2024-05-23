@@ -5,22 +5,30 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using game.MVCElements;
 using game.MVCElements.Animations;
+using System;
+using System.Collections.Generic;
+using System.Reflection;
+using Microsoft.Xna.Framework.Audio;
 
 namespace game.Entities
 {
     public class Player : ControlableEntity
     {
-        public Soul Soul;
+        public Soul Soul { get; private set; }
         public bool IsSoulAlive;
-        public AnimationPlayer test;
-
+        public bool IsSkipped { get; private set; }
         public Player(Level level, Vector2 Position, Texture2D texture)
         {
             View = new View(texture);
             Level = level;
+            animations = new Dictionary<string, Animation>
+            {
+                { "walk", new Animation(Level.Content.Load<Texture2D>("Player/Walk"), 0.1f, true) },
+                { "idle", new Animation(Level.Content.Load<Texture2D>("Player/Idle"), 0.1f, true) },
+                { "die", new Animation(Level.Content.Load<Texture2D>("Player/Die"), 0.3f, false) }
+            };
             Reset(Position);
-            test = new AnimationPlayer();
-            test.PlayAnimation(new Animation(Level.Content.Load<Texture2D>("Player/Idle"), 0.1f, true));
+            View.CallAnimation(animations["idle"]);
         }
 
         public void Reset(Vector2 position)
@@ -29,41 +37,67 @@ namespace game.Entities
             IsDead = false;
             Input = new Controller
             {
-                Left = Keys.A,
-                Right = Keys.D,
+                Left = Keys.Left,
+                Right = Keys.Right,
                 Jump = Keys.Space,
                 Grab = Keys.E,
-                Up = Keys.W,
-                Down = Keys.S,
-                ThrowClone = Keys.Q
+                Up = Keys.Space,
+                Down = Keys.Down,
+                ThrowClone = Keys.Q,
+                Restart = Keys.R
             };
             Soul = new Soul(this);
+            IsSkipped = false;
         }
+
+        #region utilities
+        public void KillPlayer() => IsDead = true;
+        public void RefillStamina() => Stamina = MaxStamina;
+        public bool CheckStanding() => IsOnGround;
+
+        public void AllowSkip()
+        {
+            Input.Skip = Keys.Enter;
+        }
+        #endregion utilities
 
         public override void Update(GameTime gameTime)
         {
+            if (IsDead)
+            {
+                View.UnpauseAnimation();
+                View.CallAnimation(animations["die"]);
+                return;
+            }
             Move(gameTime);
             ApplyPhysics(gameTime);
-            HorizontalMovement = 0.0f;
-            VerticalMovement = 0.0f;
+            if (!IsDead && IsOnGround)
+            {
+                if (Math.Abs(Velocity.X) - 0.02f > 0)
+                    View.CallAnimation(animations["walk"]);
+                else
+                    View.CallAnimation(animations["idle"]);
+            }
+            HorizontalMovement = 0;
+            VerticalMovement = 0;
             isJumping = false;
             if (!IsSoulAlive)
-                test.Unpause();
+                View.UnpauseAnimation();
         }
 
         private void Move(GameTime gameTime)
         {
             var currentKey = Keyboard.GetState();
-
-            //НЕ ЗАБУДЬ ЭТО НАПИСАТЬ ПО-ЧЕЛОЕЧЕСКИ!!!!!!
-            if (currentKey.IsKeyDown(Keys.R))
+            if (currentKey.IsKeyDown(Input.Restart))
             {
                 IsDead = true;
-                test.PlayAnimation(new Animation(Level.Content.Load<Texture2D>("Player/Die"), 0.1f, false));
                 return;
             }
-
-
+            if (currentKey.IsKeyDown(Input.Skip))
+            {
+                IsSkipped = true;
+                return;
+            }    
             if (currentKey.IsKeyDown(Input.Left))
                 HorizontalMovement = -1.0f;
             if (currentKey.IsKeyDown(Input.Right))
@@ -81,16 +115,9 @@ namespace game.Entities
         {
             Soul = Soul.Clone() as Soul;
             IsSoulAlive = true;
-            Soul.Parent = this;
-            Soul.IsBorn = true;
-            test.Pause();
-        }
-        
-        public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
-        {
-            test.Draw(gameTime, spriteBatch, new Vector2(Position.X + 5, Position.Y + 40), SpriteEffects.None);
-            //View.Draw(spriteBatch, Position);
-            //spriteBatch.Draw(this.texture, Position, color);
+            var isBornInfo = Soul.GetType().GetField("IsBorn", BindingFlags.NonPublic | BindingFlags.Instance);
+            isBornInfo.SetValue(Soul, true);
+            View.PauseAnimation();
         }
     }
 }

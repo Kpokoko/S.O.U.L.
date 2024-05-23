@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>F:/papka/game/game/Content/Player/Jump.png</SourceFile>
-  <SourceTime>2024-05-04T12:23:28.5507853+05:00</SourceTime>
-  <DestFile>F:/papka/game/game/Content/bin/DesktopGL/Player/Jump.xnb</DestFile>
-  <DestTime>2024-05-04T12:24:04.2291354+05:00</DestTime>
+  <SourceFile>F:/papka/SOUL/SOUL/Content/Player/Jump.png</SourceFile>
+  <SourceTime>2024-05-09T16:24:19.498652+05:00</SourceTime>
+  <DestFile>F:/papka/SOUL/SOUL/Content/bin/DesktopGL/Player/Jump.xnb</DestFile>
+  <DestTime>2024-05-18T15:24:40.4876936+05:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2022-07-26T16:44:56+05:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

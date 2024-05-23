@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <SourceFile>F:/papka/SOUL/SOUL/Content/Player/Die.png</SourceFile>
-  <SourceTime>2024-05-04T12:23:10.6778988+05:00</SourceTime>
+  <SourceTime>2024-05-11T14:36:19.5856424+05:00</SourceTime>
   <DestFile>F:/papka/SOUL/SOUL/Content/bin/DesktopGL/Content/Player/Die.xnb</DestFile>
-  <DestTime>2024-05-06T14:21:57.4535672+05:00</DestTime>
+  <DestTime>2024-05-11T14:36:50.9173513+05:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2022-07-26T16:44:56+05:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

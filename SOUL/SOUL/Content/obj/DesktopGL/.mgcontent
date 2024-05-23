@@ -4,18 +4,38 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>F:/papka/game/game/Content/Player/Die.png</File>
-    <File>F:/papka/game/game/Content/Player/Idle.png</File>
-    <File>F:/papka/game/game/Content/Player/Jump.png</File>
-    <File>F:/papka/game/game/Content/Player/Run.png</File>
-    <File>F:/papka/game/game/Content/Tiles/Button.png</File>
-    <File>F:/papka/game/game/Content/Tiles/Character.jpg</File>
-    <File>F:/papka/game/game/Content/Tiles/Door.png</File>
-    <File>F:/papka/game/game/Content/Tiles/platform.png</File>
-    <File>F:/papka/game/game/Content/Tiles/Spike.png</File>
-    <File>F:/papka/game/game/Content/Tiles/Wall.png</File>
+    <File>F:/papka/SOUL/SOUL/Content/background.jpg</File>
+    <File>F:/papka/SOUL/SOUL/Content/icon.bmp</File>
+    <File>F:/papka/SOUL/SOUL/Content/icon.ico</File>
+    <File>F:/papka/SOUL/SOUL/Content/Player/Climb.png</File>
+    <File>F:/papka/SOUL/SOUL/Content/Player/Die.png</File>
+    <File>F:/papka/SOUL/SOUL/Content/Player/Idle.png</File>
+    <File>F:/papka/SOUL/SOUL/Content/Player/Jump.png</File>
+    <File>F:/papka/SOUL/SOUL/Content/Player/Walk.png</File>
+    <File>F:/papka/SOUL/SOUL/Content/Sounds/Bgm.wav</File>
+    <File>F:/papka/SOUL/SOUL/Content/Sounds/Button.wav</File>
+    <File>F:/papka/SOUL/SOUL/Content/Sounds/DeathSound.wav</File>
+    <File>F:/papka/SOUL/SOUL/Content/Sounds/Door.wav</File>
+    <File>F:/papka/SOUL/SOUL/Content/Sounds/endSound.wav</File>
+    <File>F:/papka/SOUL/SOUL/Content/Tiles/Button.png</File>
+    <File>F:/papka/SOUL/SOUL/Content/Tiles/Character.jpg</File>
+    <File>F:/papka/SOUL/SOUL/Content/Tiles/Door.png</File>
+    <File>F:/papka/SOUL/SOUL/Content/Tiles/platform.png</File>
+    <File>F:/papka/SOUL/SOUL/Content/Tiles/ReversedSpike.png</File>
+    <File>F:/papka/SOUL/SOUL/Content/Tiles/Spike.png</File>
+    <File>F:/papka/SOUL/SOUL/Content/Tiles/Wall.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

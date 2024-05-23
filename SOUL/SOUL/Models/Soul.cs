@@ -1,24 +1,21 @@
 ﻿using game.MVCElements;
-using game.MVCElements.Animations;
 using game.Tiles;
 using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-using System;
 
 namespace game.Entities
 {
     public class Soul : ControlableEntity
     {
+        #region fields
         private float lifeTime;
         private const float maxLifeTime = 3.0f;
         public bool CloneLifeEnded;
-        public bool IsBorn;
-        public bool IsSplashing;
-        public ControlableEntity Parent;
-        public Player player;
+        private bool IsBorn;
+        private bool IsSplashing;
+        private Player player;
         private Vector2 previousPosition;
-        public AnimationPlayer test;
+        #endregion fields
 
         public Soul(ControlableEntity parent)
         {
@@ -30,28 +27,33 @@ namespace game.Entities
             previousPosition = Position;
             Input = new Controller()
             {
-                Left = Keys.A,
-                Right = Keys.D,
+                Left = Keys.Left,
+                Right = Keys.Right,
                 Jump = Keys.Space,
-                SplashDown = Keys.S
+                SplashDown = Keys.Down
             };
-            test = new AnimationPlayer();
-            test.PlayAnimation(new Animation(Level.Content.Load<Texture2D>("Player/Idle"), 0.1f, true));
+            animations = parent.animations;
+            View.CallAnimation(animations["idle"]);
         }
 
         public override void Update(GameTime gameTime)
         {
             if (IsBorn)
             {
-                Position.Y -= 10.0f;
+                Position = new Vector2(Position.X, Position.Y - 10);
                 HandleCollisions();
                 if (previousPosition.Y == Position.Y)
+                {
                     IsBorn = false;
+                    lifeTime = 0;
+                }
                 else
                     previousPosition.Y = Position.Y;
                 return;
             }
             CheckDespawn(gameTime);
+            if (IsDead)
+                View.CallAnimation(animations["die"]);
             if (IsDead || !player.IsSoulAlive)
                 return;
             lifeTime += (float)gameTime.ElapsedGameTime.TotalSeconds;
@@ -62,7 +64,6 @@ namespace game.Entities
             if (lifeTime >= maxLifeTime)
             {
                 player.IsSoulAlive = false;
-                lifeTime = 0;
                 return;
             }
             base.Update(gameTime);
@@ -81,7 +82,7 @@ namespace game.Entities
             }
             else if (IsSplashing)
             {
-                Position.Y += 14.0f;
+                Position = new Vector2(Position.X, Position.Y + 14);
                 HandleCollisions();
             }
         }
@@ -101,9 +102,6 @@ namespace game.Entities
             isJumping = currentKey.IsKeyDown(Input.Jump);
         }
 
-        public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
-        {
-            test.Draw(gameTime, spriteBatch, new Vector2(Position.X + 5, Position.Y + 40), SpriteEffects.None);
-        }
+        public void FollowPlayer(Vector2 playerPos) => this.Position = playerPos;
     }
 }
